@@ -1,104 +1,106 @@
 .questions {
-  width: 100%;
-  height: 600px;
+  padding: 20px;
   background-color: blueviolet;
+  color: white;
+  font-weight: 300;
 }
 
 .ourSolutions {
-  height: 700px;
-  width: 80%;
-  background-color: white;
-  margin-left: 150px;
-  margin-right: 30px;
-  border-radius: 50px;
-  position: relative;
-  top: -25px;
+  text-align: center;
 }
 
 .heading1 {
-  margin-left: 150px;
-  padding-top: 50px;
-  font-size: 35px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 .heading2 {
-  margin-left: 155px;
-  padding-top: 10px;
-  font-size: 30px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 800;
-  color: rgb(146, 62, 225);
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
 }
+
 .container {
-  width: 80%;
-  height: 550px;
-  margin-left: 120px;
-  margin-top: 50px;
-  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .container-left {
-  margin-top: -40px;
-  border: 2px solid grey;
-  height: 410px;
-  width: 50%;
-  border-radius: 30px;
-  padding: 20px 10px;
+  flex: 1;
+  padding-right: 20px;
 }
 
 .container-right {
-  margin-top: -400px;
-  margin-left: 700px;
-}
-
-.imgs {
-  height: 290px;
-  width: 290px;
-  border-radius: 50%;
-  /* border: 2px solid red; */
+  flex: 1;
 }
 
 .container-question {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  font-size: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 900;
-  padding-left: 30px;
-  padding-bottom: 10px;
-  padding-right: 30px;
+  margin-bottom: 20px;
+}
 
-  border: 2px solid grey;
-  border-radius: 15px;
-  padding-top: 10px;
-  margin-top: 10px;
+.ques {
+  font-size: 24px;
 }
 
 .arrowicon {
-  margin-left: 45px;
-  margin-top: 5px;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.imgs {
+  max-width: 100%;
 }
 
 .anotherHeading {
-  margin-left: 125px;
-  margin-top: 120px;
-  font-size: 20px;
-  color: grey;
+  font-size: 24px;
+  margin-top: 40px;
 }
 
 .headSpan {
-  color: black;
+  font-weight: bold;
 }
 
 .headicon {
-  margin-left: 750px;
-  margin-top: 40px;
-  font-size: 30px;
-  font-style: italic;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 900;
-  color: blueviolet;
-  width: 20%;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container-left,
+  .container-right {
+    flex: 1;
+    padding: 0;
+  }
+
+  .heading1 {
+    font-size: 28px;
+  }
+
+  .heading2 {
+    font-size: 20px;
+  }
+
+  .ques {
+    font-size: 20px;
+  }
+
+  .arrowicon {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  .anotherHeading {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .headicon {
+    font-size: 20px;
+    margin-top: 10px;
+  }
 }

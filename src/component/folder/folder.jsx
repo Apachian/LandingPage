@@ -6,18 +6,18 @@ function folder() {
   return (
     <div className="folder">
       <div className="containers">
-        <h1 className="topheads">By</h1>
-        <h2 className="topheadsu">UseCase</h2>
+        <h1 className="topheads heam">By</h1>
+        <h2 className="topheadsu heam">UseCase</h2>
         <br />
         <br />
         <br />
-        <h4 className="nexthead">Use Case 1</h4>
+        <h4 className="nexthead heam">Use Case 1</h4>
         <br />
-        <h4 className="nextheads">Use Case 1</h4>
+        <h4 className="nextheads heam">Use Case 1</h4>
         <br />
-        <h4 className="nextheads">USe Case 1</h4>
+        <h4 className="nextheads heam">USe Case 1</h4>
         <br />
-        <h4 className="nextheads">USe Case 1</h4>
+        <h4 className="nextheads heam">USe Case 1</h4>
         <div className="cont-content">
           <div className="rights-cont">
             <p className="rights-contents">

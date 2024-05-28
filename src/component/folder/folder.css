@@ -1,4 +1,4 @@
-.folder {
+/* .folder {
   width: 100%;
   height: 590px;
   background-color: blueviolet;
@@ -10,6 +10,7 @@
   border: 2px solid grey;
   position: relative;
   top: -55px;
+  border: 2px solid red;
   margin-left: 120px;
   background-color: white;
   padding-bottom: 50px;
@@ -71,4 +72,94 @@
   height: 300px;
   width: 300px;
   border-radius: 50%;
+} */
+/* styles.css */
+
+/* General styles for the folder component */
+.folder {
+  padding: 20px;
+}
+
+.containers {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(135, 77, 190);
+  border-radius: 20px;
+}
+
+.heam {
+  font-family: Arial, sans-serif;
+}
+
+.topheads,
+.topheadsu,
+.nexthead,
+.nextheads {
+  margin: 0;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.cont-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rights-cont,
+.lefts-cont {
+  flex: 1;
+  min-width: 300px;
+}
+
+.rights-contents {
+  padding: 20px;
+  color: white;
+  font-weight: 300;
+}
+
+.workes {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .cont-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rights-cont,
+  .lefts-cont {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .rights-contents {
+    padding: 10px;
+  }
+
+  .workes {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .topheads,
+  .topheadsu,
+  .nexthead,
+  .nextheads {
+    text-align: center;
+  }
+
+  .rights-contents {
+    font-size: 14px;
+  }
 }

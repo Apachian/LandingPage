@@ -1,29 +1,101 @@
+/* General styles for the Ready component */
 .ready {
-  width: 100%;
-  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
   background-color: blueviolet;
+  text-align: center;
 }
 
 .content {
-  justify-content: center;
-  text-align: center;
-  padding-top: 50px;
-  letter-spacing: 1;
-  font-size: 25px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
-  color: white;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .paragraph {
-  font-weight: 400;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background-color: #0056b3;
 }
 
 .card {
-  font-size: 15px;
-  text-decoration: underline;
+  font-size: 1em;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icons {
-  text-decoration: underline;
+  margin-left: 5px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .ready {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .paragraph {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
+  .card {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .paragraph {
+    font-size: 0.9em;
+  }
+
+  .btn {
+    font-size: 0.8em;
+    padding: 6px 12px;
+  }
+
+  .card {
+    font-size: 0.8em;
+  }
 }

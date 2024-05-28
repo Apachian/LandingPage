@@ -1,115 +1,67 @@
 .footer {
-  width: 100%;
-  height: 600px;
-  background-color: black;
-  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
 
-.products {
-  margin-left: 90px;
+.products,
+.resourses,
+.company,
+.legal {
+  flex: 1;
+  margin-right: 20px;
 }
 
-.product-heading {
-  padding-top: 50px;
-  font-size: 40px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 900;
-}
-
-.kite {
-  margin-left: 1200px;
-  margin-top: -40px;
-}
-.product-heading1 {
-  margin-top: -195px;
-  font-size: 40px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 900;
-  margin-left: 410px;
-}
-
-.product-heading2 {
-  margin-top: -150px;
-  margin-left: 830px;
-  font-size: 40px;
-  padding-bottom: 40px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 900;
-}
-
+.product-heading,
+.product-heading1,
+.product-heading2,
 .product-heading3 {
-  margin-top: -230px;
-  margin-left: 1150px;
-  font-size: 40px;
-  padding-bottom: 40px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.lists {
-  list-style: none;
-  margin-top: 40px;
-  font-size: 20px;
-  /* border: 2px solid white; */
-  width: 20%;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 900;
-}
-.resourses-lists {
-  margin-left: 415px;
-  margin-top: 40px;
-  list-style: none;
-  /* border: 2px solid white; */
-  width: 20%;
-  font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 900;
-}
-
-.company-lists {
-  margin-left: 840px;
-  margin-top: -10px;
-  list-style: none;
-  font-size: 20px;
-  font-weight: 900;
-  /* padding-top: -30px; */
-  /* border: 2px solid white; */
-  width: 15%;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
+.lists,
+.resourses-lists,
+.company-lists,
 .legal-lists {
-  margin-left: 1150px;
-  margin-top: -15px;
-  list-style: none;
-  font-size: 20px;
-  font-weight: 900;
-  padding-top: -30px;
-  /* border: 2px solid white; */
-  width: 20%;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  list-style-type: none;
+  padding: 0;
 }
 
 .headi {
-  margin-left: 80px;
-  margin-top: 130px;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
-.icon {
-  margin-left: 1150px;
-  margin-top: -130px;
+.kite {
+  font-size: 24px;
+  margin-top: 20px;
 }
 
-.heading {
-  margin-left: 1200px;
-  font-size: 35px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 900;
-  margin-top: -50px;
+.copytight {
+  font-size: 14px;
+  margin-top: 20px;
 }
 
-.copyright {
-  justify-content: center;
-  text-align: center;
-  padding-top: 50px;
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products,
+  .resourses,
+  .company,
+  .legal {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .kite {
+    margin-top: 10px;
+  }
 }

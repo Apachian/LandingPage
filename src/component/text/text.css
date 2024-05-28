@@ -1,35 +1,72 @@
+/* General styles for the text component */
 .texts {
-  width: 100%;
-  height: 600px;
-  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 10px;
+  text-align: center;
 }
 
 .main-images {
-  width: 400px;
-  height: 400px;
-  margin-left: 120px;
-  margin-top: 140px;
-  border-radius: 20px;
-  background: transparent;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.para {
-  margin-left: 800px;
-  margin-right: 120px;
-  text-align: center;
-  font-size: 28px;
-  justify-content: center;
-  text-align: justify;
-  letter-spacing: 0.1;
-  /* margin-top: -290px; */
+.text {
+  flex: 2;
+  min-width: 300px;
+  padding: 20px;
 }
 
 .heading-2 {
-  margin-left: 800px;
-  margin-top: -390px;
-  width: 550px;
-  font-size: 35px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
-  padding-bottom: 40px;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.para {
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .texts {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .image,
+  .text {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .heading-2 {
+    font-size: 1.5em;
+  }
+
+  .para {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-2 {
+    font-size: 1.2em;
+  }
+
+  .para {
+    font-size: 0.8em;
+  }
 }

@@ -27,12 +27,12 @@ function Customer() {
           </h4>
         </div>
         <div className="img3">
-          <h4 className="head3">
+          <h4 className="head3 third">
             <MdWifiTetheringErrorRounded className="icons1" /> goodmind.
             <span className="apps">app</span>
           </h4>
         </div>
-        <div className="img4">
+        <div className="img4 third fouth">
           <LuHeartHandshake className="ice" />
         </div>
       </div>

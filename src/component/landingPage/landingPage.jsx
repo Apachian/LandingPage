@@ -1,7 +1,6 @@
 import React from "react";
 import "./landingPage.css";
 import { AiFillThunderbolt } from "react-icons/ai";
-import laptop from "../../assets/laptops.png";
 
 function landingPage() {
   return (
@@ -21,10 +20,10 @@ function landingPage() {
           World's First Candidate Tracking Software.
         </h2>
         <br />
-        <h5>Check with our CTS Whether You Should Hire Or Not!</h5>
+        <h5>Check with our CTS Whether<br/> You Should Hire Or Not!</h5>
         <br />
         <br />
-        <button className="btn">Join WaitList</button>
+        <button className="btn">Join  <span>WaitList</span></button>
       </div>
     </div>
   );
