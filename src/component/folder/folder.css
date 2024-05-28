@@ -1,0 +1,74 @@
+.folder {
+  width: 100%;
+  height: 590px;
+  background-color: blueviolet;
+}
+
+.containers {
+  width: 1200px;
+  height: 700px;
+  border: 2px solid grey;
+  position: relative;
+  top: -55px;
+  margin-left: 120px;
+  background-color: white;
+  padding-bottom: 50px;
+  border-radius: 20px;
+}
+
+.topheads {
+  margin-left: 150px;
+  margin-top: 170px;
+  font-size: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.topheadsu {
+  margin-left: 150px;
+  font-size: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 900;
+}
+
+.nexthead {
+  margin-left: 150px;
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.nextheads {
+  margin-left: 150px;
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.cont-content {
+  height: 590px;
+  width: 60%;
+  background-color: blueviolet;
+  margin-left: 380px;
+  margin-top: -420px;
+  border-radius: 20px;
+}
+
+.rights-contents {
+  color: white;
+  padding-right: 450px;
+  padding-left: 50px;
+  padding-top: 50px;
+  font-size: 20px;
+  justify-content: center;
+  text-align: left;
+}
+
+.workes {
+  margin-top: -600px;
+  margin-left: 350px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
